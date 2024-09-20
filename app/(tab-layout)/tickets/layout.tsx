@@ -1,13 +1,7 @@
-import Link from 'next/link'
-import { ReactNode } from 'react'
+import Link from "next/link";
+import { ReactNode } from "react";
 
-export default function TicketsLayout({
-  children,
-  modal,
-}: {
-  children: ReactNode
-  modal: ReactNode
-}) {
+export default function TicketsLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex flex-col">
       <Link href="/tickets/new">
@@ -15,10 +9,7 @@ export default function TicketsLayout({
           Create Ticket
         </button>
       </Link>
-      <div className="flex flex-row">
-        {children}
-        {modal}
-      </div>
+      <div className="flex flex-row">{children}</div>
     </div>
-  )
+  );
 }
