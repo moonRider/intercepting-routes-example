@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { ReactNode } from "react";
+import Link from 'next/link'
+import { ReactNode } from 'react'
 
 export default function TicketsLayout({ children }: { children: ReactNode }) {
   return (
@@ -11,5 +11,5 @@ export default function TicketsLayout({ children }: { children: ReactNode }) {
       </Link>
       <div className="flex flex-row">{children}</div>
     </div>
-  );
+  )
 }
